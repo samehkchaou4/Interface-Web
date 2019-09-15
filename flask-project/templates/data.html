@@ -1,0 +1,74 @@
+﻿<!doctype html>
+
+<head>
+  <!-- Une page pour examiner les données -->
+  <title>System Identification</title>
+  
+</head>
+
+
+ <style type="text/css">
+{
+   font-family: avenir, sans-serif;
+}
+
+
+.shadowbox {
+  width: 82em;
+  height: 1000 em
+  border: 1px solid #333;
+  box-shadow: 8px 8px 5px #444;
+  padding: 8px 12px;
+  background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+}
+
+figcaption{
+   background-color: RGBa(0,0,0,0.8);
+   color: #fff;
+   text-align: center;
+   font-style: italic;  
+} 
+ </style>
+<body>
+
+
+
+
+<div class="shadowbox">
+<br/>
+<center>
+  Classification result for the sentence :<br/> <code>
+ {{ data }}        </code>
+ <br/>
+</center>
+<br/>
+The best scores : <br/>{  <br/>
+1.{ <br/>
+Dialect : {{ dialects[0] }}<br/>
+Probability: {{ probs[0] }}<br/>
+}<br/>
+
+2.{ <br/>
+Dialect : {{ dialects[1] }}<br/>
+Probability: {{ probs[1] }}<br/>
+}<br/>
+
+3.{ <br/>
+Dialect : {{ dialects[2] }}<br/>
+Probability: {{ probs[2] }}<br/>
+}<br/>
+4.{ <br/>
+Dialect : {{ dialects[3] }}<br/>
+Probability: {{ probs[3] }}<br/>
+}<br/>
+5.{ <br/>
+Dialect : {{ dialects[4] }}<br/>
+Probability: {{ probs[4] }}<br/>
+}<br/>
+}
+<br/> <br/> <br/> <br/> <br/>
+ <center><a href="../" class="a" > Refresh </a></center>
+</div>
+  
+</body>
+

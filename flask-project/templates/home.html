@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>System Identification</title>
+ <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= '/home/skchaou/flask-project/static/css/style.css')}}">
+ <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= 'css/bootstrap.css')}}">
+</head>
+
+<style type="text/css">
+.shadowbox {
+  width: 82em;
+  height: 1000 em
+  border: 1px solid #333;
+  box-shadow: 8px 8px 5px #444;
+  padding: 8px 12px;
+  background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+}
+</style>
+<body>
+ 
+  
+ <div class="shadowbox"><div align="center" class="bg-info">
+
+<br/>
+ <h1>Language Identification</h1></div>
+
+ <div class="big" align="center">
+ 
+ <form action="{{url_for('predict')}}" method="POST">
+   <h3>Enter Your sentence Here</h3><textarea name="comment" rows="4" cols="50" required ></textarea>
+   <br/>
+<br/>   <input type="submit" name="" value="Predict" class="btn btn-info">
+ <input type="reset" name="" value="Annuler" class="btn btn-info"> </form>
+ <br/>
+</div> <br/>
+ </div> <br/></body>
+ <br/></html>
